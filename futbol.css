@@ -1,0 +1,18 @@
+.futbol-logo {
+    width: 150px; 
+    height: auto; 
+    position: absolute;
+    offset-path: path("M 0,250 L 500,250");
+    offset-distance: 0%;
+    animation: movimientoLineal 5s linear infinite alternate;
+  }
+  
+  @keyframes movimientoLineal {
+    0% {
+      offset-distance: 0%;
+    }
+    100% {
+      offset-distance: 100%;
+    }
+  }
+  

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futbol</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e3f2fd;
+            margin: 0;
+        }
+
+        .logo-container {
+            position: relative;
+            width: 500px; 
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .futbol-logo {
+            width: 500px; 
+            height: auto;
+            position: absolute;
+            offset-path: path("M 0,250 L 500,250"); 
+            offset-distance: 0%;
+            animation: movimientoLineal 5s linear infinite alternate;
+        }
+
+        @keyframes movimientoLineal {
+            0% {
+                offset-distance: 0%;
+            }
+            100% {
+                offset-distance: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="futbol.svg" alt="futbol" class="futbol-logo">
+    </div>
+</body>
+</html>
